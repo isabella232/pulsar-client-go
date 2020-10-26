@@ -49,22 +49,22 @@ const (
 
 var (
 	connectionsOpened = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_connections_opened",
+		Name: "pulsar_netdata_netdata_client_connections_opened",
 		Help: "Counter of connections created by the client",
 	})
 
 	connectionsClosed = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_connections_closed",
+		Name: "pulsar_netdata_netdata_client_connections_closed",
 		Help: "Counter of connections closed by the client",
 	})
 
 	connectionsEstablishmentErrors = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_connections_establishment_errors",
+		Name: "pulsar_netdata_netdata_client_connections_establishment_errors",
 		Help: "Counter of errors in connections establishment",
 	})
 
 	connectionsHandshakeErrors = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_connections_handshake_errors",
+		Name: "pulsar_netdata_netdata_client_connections_handshake_errors",
 		Help: "Counter of errors in connections handshake (eg: authz)",
 	})
 )

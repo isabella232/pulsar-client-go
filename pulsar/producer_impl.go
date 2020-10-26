@@ -34,17 +34,17 @@ import (
 
 var (
 	producersOpened = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_producers_opened",
+		Name: "pulsar_netdata_client_producers_opened",
 		Help: "Counter of producers created by the client",
 	})
 
 	producersClosed = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_producers_closed",
+		Name: "pulsar_netdata_client_producers_closed",
 		Help: "Counter of producers closed by the client",
 	})
 
 	producersPartitions = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "pulsar_client_producers_partitions_active",
+		Name: "pulsar_netdata_client_producers_partitions_active",
 		Help: "Counter of individual partitions the producers are currently active",
 	})
 )

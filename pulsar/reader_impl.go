@@ -35,12 +35,12 @@ const (
 
 var (
 	readersOpened = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_readers_opened",
+		Name: "pulsar_netdata_client_readers_opened",
 		Help: "Counter of readers created by the client",
 	})
 
 	readersClosed = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_readers_closed",
+		Name: "pulsar_netdata_client_readers_closed",
 		Help: "Counter of readers closed by the client",
 	})
 )

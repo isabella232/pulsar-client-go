@@ -54,32 +54,32 @@ var (
 
 var (
 	messagesPublished = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_messages_published",
+		Name: "pulsar_netdata_client_messages_published",
 		Help: "Counter of messages published by the client",
 	})
 
 	bytesPublished = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_bytes_published",
+		Name: "pulsar_netdata_client_bytes_published",
 		Help: "Counter of messages published by the client",
 	})
 
 	messagesPending = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "pulsar_client_producer_pending_messages",
+		Name: "pulsar_netdata_client_producer_pending_messages",
 		Help: "Counter of messages pending to be published by the client",
 	})
 
 	bytesPending = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "pulsar_client_producer_pending_bytes",
+		Name: "pulsar_netdata_client_producer_pending_bytes",
 		Help: "Counter of bytes pending to be published by the client",
 	})
 
 	publishErrors = promauto.NewCounter(prometheus.CounterOpts{
-		Name: "pulsar_client_producer_errors",
+		Name: "pulsar_netdata_client_producer_errors",
 		Help: "Counter of publish errors",
 	})
 
 	publishLatency = promauto.NewHistogram(prometheus.HistogramOpts{
-		Name:    "pulsar_client_producer_latency_seconds",
+		Name:    "pulsar_netdata_client_producer_latency_seconds",
 		Help:    "Publish latency experienced by the client",
 		Buckets: []float64{.0005, .001, .005, .01, .025, .05, .1, .25, .5, 1, 2.5, 5, 10},
 	})
