@@ -21,10 +21,10 @@ import (
 	"crypto/tls"
 	"fmt"
 
-	"github.com/apache/pulsar-client-go/oauth2"
-	"github.com/apache/pulsar-client-go/oauth2/cache"
-	"github.com/apache/pulsar-client-go/oauth2/clock"
-	"github.com/apache/pulsar-client-go/oauth2/store"
+	"github.com/netdata/pulsar-client-go/oauth2"
+	"github.com/netdata/pulsar-client-go/oauth2/cache"
+	"github.com/netdata/pulsar-client-go/oauth2/clock"
+	"github.com/netdata/pulsar-client-go/oauth2/store"
 )
 
 const (

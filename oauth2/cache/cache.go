@@ -22,11 +22,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/apache/pulsar-client-go/oauth2"
-	"github.com/apache/pulsar-client-go/oauth2/store"
+	"github.com/netdata/pulsar-client-go/oauth2"
+	"github.com/netdata/pulsar-client-go/oauth2/store"
 
 	xoauth2 "golang.org/x/oauth2"
-	"github.com/apache/pulsar-client-go/oauth2/clock"
+	"github.com/netdata/pulsar-client-go/oauth2/clock"
 )
 
 // A CachingTokenSource is anything that can return a token, and is backed by a cache.

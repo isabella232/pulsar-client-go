@@ -21,7 +21,7 @@ import (
 	"crypto/tls"
 	"time"
 
-	"github.com/apache/pulsar-client-go/pulsar/internal/auth"
+	"github.com/netdata/pulsar-client-go/pulsar/internal/auth"
 )
 
 func NewClient(options ClientOptions) (Client, error) {

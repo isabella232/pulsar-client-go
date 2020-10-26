@@ -27,9 +27,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/apache/pulsar-client-go/pulsar/internal"
-	"github.com/apache/pulsar-client-go/pulsar/internal/auth"
-	pb "github.com/apache/pulsar-client-go/pulsar/internal/pulsar_proto"
+	"github.com/netdata/pulsar-client-go/pulsar/internal"
+	"github.com/netdata/pulsar-client-go/pulsar/internal/auth"
+	pb "github.com/netdata/pulsar-client-go/pulsar/internal/pulsar_proto"
 )
 
 const (

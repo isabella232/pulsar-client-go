@@ -29,7 +29,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/apache/pulsar-client-go/pulsar/internal"
+	"github.com/netdata/pulsar-client-go/pulsar/internal"
 
 	pkgerrors "github.com/pkg/errors"
 )

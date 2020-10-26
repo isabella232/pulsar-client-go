@@ -35,8 +35,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/apache/pulsar-client-go/pulsar/internal/auth"
-	pb "github.com/apache/pulsar-client-go/pulsar/internal/pulsar_proto"
+	"github.com/netdata/pulsar-client-go/pulsar/internal/auth"
+	pb "github.com/netdata/pulsar-client-go/pulsar/internal/pulsar_proto"
 )
 
 const (
@@ -355,7 +355,7 @@ func (c *connection) run() {
 
 	defer func() {
 		// all the accesses to the pendingReqs should be happened in this run loop thread,
-		// including the final cleanup, to avoid the issue https://github.com/apache/pulsar-client-go/issues/239
+		// including the final cleanup, to avoid the issue https://github.com/netdata/pulsar-client-go/issues/239
 		for id, req := range c.pendingReqs {
 			req.callback(nil, errors.New("connection closed"))
 			delete(c.pendingReqs, id)
